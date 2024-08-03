@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page with Background Video Slider | Travel</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo"><span>T</span>ravel</a>
+    
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <!-- <a href="#book">book</a> -->
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <!-- <a href="#gallery">Gallery</a> -->
+        <!-- <a href="#reviews">Reviews</a> -->
+        <a href="#contact">Contact</a>
+      </div>
+      <div  class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here....">
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+ </header>
+ 
+   <!-- home section starts -->
+
+     <section class="home" id="home">
+      <div class="im">
+      <img src="images/calm.jpg" alt="" height="600px" width="1250px">
+    </div>
+       <!-- <div class="content">
+         <h3> Adventure is worthwhile</h3>
+         <p>Discover new places with us, adventure awaits</p>
+         <a href="#" class="btn">Discover more</a>
+       </div> -->
+     </section>
+ <!-- home section ends -->
+
+  <!-- Packages section starts -->
+
+   <section class="packages" id="packages">
+    <h1 class="heading">
+      <span>p</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+     </h1>
+
+     <div class="box-container">
+
+       <div class="box">
+         <img src="images/taj.jpg" alt="Taj Mahal" >
+         <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Taj Mahal-India </h3>
+            <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.</p>
+              <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price"><span>Price: ₹8000</span></div><br>
+            <div class="but">
+            <a href="book.html?package=Taj%20Mahal-India&price=8000"
+            class="book-now-btn">Book Now</a></div>
+        </div> 
+       </div>
+
+       <div class="box">
+        <img src="images/italy2.jpg" alt="The Colosseum-Italy" width="996" height="664">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> The Colosseum-Italy </h3>
+            <p>The Colosseum is an amphitheatre built in Rome under the Flavian emperors of the Roman Empire. </p>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price"><span>Price: ₹17,292</span></div><br>
+            <div class="but">
+            <a href="book.html?package=The%20Colosseum-Italy&price=17292"
+            class="book-now-btn">Book Now</a></div>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="images/mexico.jpg" alt="Chichén Itzá-Mexico">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Chichén Itzá-Mexico</h3>
+           <p>Chichen Itza is a complex of Mayan ruins centrally located on the northern half of Mexico's Yucatan Peninsula</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price"><span>Price:₹26,940</span></div><br>
+            <div class="but">
+            <a href="book.html?package=Chichén%20Itzá-Mexico&price=26940"
+            class="book-now-btn">Book Now</a></div>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="images/machu.jpg" alt="Machu Picchu-Peru">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Machu Picchu-Peru </h3>
+            <p>Machu Picchu , Ancient fortress city of the Incas in the Andes Mountains, south-central Peru.
+              It is perched above the Urubamba River valley in a narrow saddle between two sharp peaks.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price"><span>₹35,345</span></div><br>
+            <div class="but">
+            <a href="book.html?package=Machu%20Picchu-Peru&price=35345"
+            class="book-now-btn">Book Now</a></div>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="images/petra.jpg" alt="Petra -Jorda" >
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"><br> </i>  Petra -Jordan </h3>
+            <p>Petra is half-built, half-carved into the rock, and is surrounded by mountains riddled with passages and gorges.Petra is a symbol of Jordan.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price"><span>₹30,330</span></div><br>
+            <div class="but">
+            <a href="book.html?package=Petra-Jordan&price=30330"
+            class="book-now-btn">Book Now</a></div>
+        </div>
+       </div>     
+       <div class="box">
+        <img src="images/china.jpeg" alt="The Great Wall of China">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> The Great Wall of China </h3>
+          <p>The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i> 
+              <i class="fas  fa-star"></i>
+            </div>
+            <div class="price"><span>₹42,870</span></div><br>
+            <div class="but"> 
+            <a href="book.html?package=The%20Great%20Wall%20Of%20China&price=42870"
+            class="book-now-btn">Book Now</a></div>
+       </div>
+      </div>
+   </div>
+
+<div class="mid">
+   <div class="bo">
+    <img src="images/Christ.jpg.avif" alt="" >
+    <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>  Christ the Redeemer-Brazil </h3>
+        <p>Christ the Redeemer statue is the largest Art Deco design ever built in the history of the world. The statue portrays Jesus with arms open, symbolizing welcome and peace.</p><br>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i> 
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price"><span>₹32,780</span></div><br>
+        <div class="but">
+        <a href="book.html?package=Christ%20the%20Wall%20Redeemer-Brazil&price=32780"
+        class="book-now-btn">Book Now</a></div>
+    </div>
+   </div>
+ </div>
+</section>
+<!-- packages section ends -->
+
+
+<!-- Services section starts -->
+
+  <section class="services" id="services">
+
+    <h1 class="heading">
+      <span>S</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>affordable hotels</h3>
+        <p> We provides best hotel that provides minimum amenities and services for a lower price than a regular hotel in the area.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>food and drinks</h3>
+        <p>We provides food and specially drinks for the tourists refreshment with and help them to be fresh while watching the wonders.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>safety guide</h3>
+        <p>Safety measures are taken while travelling like first aid box and in case of emergency we also have nearest hospitals location.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>around the world</h3>
+        <p>Our purpose is to travel you all over the worlds wonders and to give a amazing experience.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>fastest travel</h3>
+        <p>Our aim is to travel you fastest with safety and we provide economy, business tickets of plane .</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>adventures</h3>
+        <p>The whole trip will be adventureous and also will get fun as well as information that how every corner of world is so interesting.</p>
+      </div>
+    </div>
+
+   </section>
+    <!-- services section ends -->
+
+  <!-- Gallery section starts -->
+
+  <!-- <section class="gallery" id="gallery">
+
+    <h1 class="heading">
+      <span>g</span>
+      <span>a</span>
+      <span>l</span>
+      <span>l</span>
+      <span>e</span>
+      <span>r</span>
+      <span>y</span>
+    </h1>
+
+    <div class="box-container">
+        
+      <div class="box">
+         <img src="images/beach.jpg" alt="">
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum suscipit amet similique at voluptas repellat laboriosam !</p>
+          <a></a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section> -->
+<!-- review section starts -->
+<!-- <section class="review" id="review">
+  <h1 class="heading">
+      <span>r</span>
+      <span>e</span>
+      <span>v</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+  </h1>
+  <div class="review-slider">
+
+  <div class="wrapper">
+
+      <div class="slider">
+          <div class="box">
+            <img src="" alt="">
+            <h3>Renuka naik</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, optio, totam ducimus laboriosam nesciunt ipsa doloribus, reiciendis architecto facilis temporibus molestiae possimus fugit illo numquam suscipit unde at quod nobis.</p>
+            <div class="stars">
+           <i class="fas fa-star"></i>
+            </div>
+      </div>
+    </div>
+    
+  </div>
+
+  </div>
+</section> -->
+
+<!-- review sections starts -->
+ 
+  
+ </section>
+
+ <section class="contact" id="contact">
+ <h1 class="heading">
+  <span>c</span>
+  <span>o</span>
+  <span>n</span>
+  <span>t</span>
+  <span>a</span>
+  <span>c</span>
+  <span>t</span></h1>
+ 
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>  
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h3> <i class="fas fa-phone"></i> Contact Information :</h3>
+          <p> Address: Kothrud, Ideal Colony Pune-Maharashtra</p>
+          <p>Phone: 953-7800-1730</p>
+          <p>Email: [info@example.com](mailto:info@example.com)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer section starts -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>about us</h3>
+        <p>“Our team is made up of passionate travelers who have a wealth of knowledge and experience in the travel industry.”  </p>
+      </div><br><br><br><br><br><br><br><br><br>
+      <div class="col-md-4">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">packages</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact</li>
+         
+        </ul>
+      </div><br>
+      <div class="col-md-4">
+        <h3>branch location</h3>
+        <ul>
+          <li><a href="#">India</a></li>
+          <li><a href="#">USA</a></li>
+          <li><a href="#">japan</a></li>
+        </ul>
+      </div><br><br>
+      <div class="col-md-4" id="loll">
+        <h3>Follow Us</h3>
+        <ul class="lol">
+          <li><a href="#" target="_blank">instagram</a></li>
+          <li><a href="#" target="_blank">facebook</i></a></li>
+          <li><a href="#" target="_blank">twitter</i></a></li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17006146273!2d73.69815290323776!3d18.52454503887362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1722201979843!5m2!1sen!2sin" width="400" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Created by<span> [Ekta Patil] </span> | All rights reserved!|</p>
+  </div>
+</footer>
+
+
+
+ <script>
+  
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+
+// let formBtn = document.querySelector('#login-btn');
+// let loginForm = document.querySelector('.login-form-container');
+// let formClose = document.querySelector('.form-close');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+window.onscroll= () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    // loginForm.classList.remove('active');
+}
+    
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click' , ()=>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+}); 
+
+// Add event listener to social media links
+document.querySelectorAll('footer ul li a').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    window.open(link.href, '_blank');
+  });
+});
+
+</script>
+</body>
+
+</html>
+
+

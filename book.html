@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+  
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <!-- <a href="#book">book</a> -->
+      <a href="index.html">Packages</a>
+      <a href="index.html">Services</a>
+      <!-- <a href="#gallery">Gallery</a> -->
+      <!-- <a href="#reviews">Reviews</a> -->
+      <a href="index.html">Contact</a>
+    </div>
+   
+</header>
+    <section class="book" id="book">
+
+    <h1 class="heading" id="change2">
+     <span>b</span>
+     <span>o</span>
+     <span>o</span>
+     <span>k</span>
+     <span class="space"></span>
+     <span>n</span>
+     <span>o</span>
+     <span>w</span>
+    </h1>
+
+    <div class="row">
+      <div class="image">
+          <img src="images/book.jpeg">
+      </div>
+      </div>
+  <!-- Book Now Form -->
+  <div class="booking-form">
+		<form id="booking-form">
+			<label for="persons">Number of persons:</label>
+			<input type="number" id="persons" min="1" required>
+			<label for="arrival">Arrival date:</label>
+			<input type="date" id="arrival" required>
+			<label for="leaving">Leaving date:</label>
+			<input type="date" id="leaving" required>
+			<button type="submit">Book</button>
+		</form>
+		<!-- <div id="message-card"></div> -->
+  </div>
+  <div id="message-card"></div>
+</section>
+
+<script>  
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+window.onscroll= () =>{
+
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    // loginForm.classList.remove('active');
+}
+    
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+  
+const form = document.getElementById('booking-form');
+const messageCard = document.getElementById('message-card');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const persons = document.getElementById('persons').value;
+			const arrival = document.getElementById('arrival').value;
+			const leaving = document.getElementById('leaving').value;
+			const packageName = new URLSearchParams(window.location.search).get('package');
+			const price = new URLSearchParams(window.location.search).get('price');
+      const cal= price*persons;
+      
+			const message = `Your Package Is Booked....\n
+				Package: ${packageName}
+				Price: ${cal}
+				Number of persons: ${persons}
+				Arrival date: ${arrival}
+				Leaving date: ${leaving}
+
+			` ;
+      messageCard.innerText = message;
+
+      const button = document.createElement("button");
+      button.innerHTML = "Checkout";
+      button.onclick = function()
+      {
+         alert("Thanks For Booking...");
+         messageCard.innerText="";//clear the messageCard's innerText
+         document.getElementById("booking-form").reset();//Reset the form fields
+      };
+
+      
+     messageCard.appendChild(button);
+
+
+
+			
+		});
+</script>
+</body>
+</html>
